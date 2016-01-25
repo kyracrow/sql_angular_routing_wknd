@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Weekend</title>
+    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheets">
+    <link href="assets/styles/styles.css" rel="stylesheets">
+    <script src="vendors/angular/angular.min.js"></script>
+    <script src="vendors/angular-route/angular-route.min.js"></script>
+    <script src="assets/scripts/client.min.js"></script>
+</head>
+<h1>Go ahead! Pick one!</h1>
+<body ng-controller="MainController">
+
+    <div>
+        <a href="#/main"><button>Home</button></a>
+        <a href="#/address"><button>Address</button></a>
+        <a href="#/order"><button>Order</button></a>
+    </div>
+    <br>
+
+    <div ng-view>
+
+    </div>
+
+
+</body>
+</html>
